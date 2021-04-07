@@ -1,0 +1,131 @@
+@import './mixin.scss';
+.el-form-item__label {
+  font-size: $font-size-base ;
+  color: #555555;
+  font-weight: 800;
+  &::before {
+    font-size: 18px;
+    vertical-align: middle;
+  }
+}
+
+.el-notification__content p {
+  word-break: break-all;
+}
+
+.el-form--label-top {
+  .el-form-item__label {
+    margin-bottom: -14px;
+  }
+}
+
+.el-radio__label,
+.el-checkbox__label {
+  font-size: $font-size-base;
+  color: $color-text-primary;
+}
+
+
+.el-input.is-disabled .el-input__inner {
+  color: #828994 !important;
+}
+
+.el-tabs__item:focus.is-active.is-focus:not(:active) {
+  box-shadow: none !important;
+}
+
+.el-tabs__item {
+  font-size: $font-size-medium !important;
+  font-weight: 700;
+}
+
+.el-form-item {
+  margin-bottom: 18px;
+}
+
+.el-form-item__error {
+  padding-top: 0;
+}
+
+.custom-dialog-class {
+  border-radius: 7px !important;
+  overflow: hidden;
+  min-width: 520px;
+
+  .el-dialog__header {
+    background-color: #3695ff;
+    padding: 10px 20px;
+
+    .el-dialog__title {
+      color: #fff;
+    }
+
+    .el-dialog__headerbtn {
+      top: 14px;
+    }
+
+    .el-icon {
+      color: rgba($color: #fff, $alpha: 0.8);
+      font-size: 22px;
+      cursor: pointer;
+
+      &:hover {
+        color:#fff
+      }
+    }
+  }
+}
+
+.el-table__header {
+  .cell {
+    font-size: $font-size-base;
+    font-weight: normal;
+    color: #888;
+  }
+}
+
+.el-table__body {
+  .cell {
+    font-size: $font-size-base;
+    color: $color-text-primary;
+  }
+
+  
+}
+
+.el-table--enable-row-hover .el-table__body tr:hover > td {
+  background-color: transparent !important;
+}
+
+.el-table td, .el-table th.is-leaf {
+  border-bottom: none;
+}
+
+.el-table__body-wrapper {
+  @include scrollBar;
+}
+
+.el-date-editor .el-range-separator {
+  width: 12%;
+}
+
+.el-popover {
+  min-width: 70px;
+}
+
+.el-popper[x-placement^=bottom] {
+  margin-top: 8px;
+}
+
+.el-input {
+  font-size: $font-size-base;
+}
+
+.el-input__inner {
+  height: 36px;
+  line-height: 36px;
+}
+
+.el-input__count {
+  line-height: normal;
+}
